@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<img src="header_Solas2s.JPG" />
+<hr />
+<title>Solas Component HTML Soundtrack Localiser S_manualStandalone.html</title>
+<!--
+Creation Date: 05 June 2012
+Author: Ian O'Keeffe
+
+Modification History:
+--------------------------
+05-06-2012
+This page controls a standalone instantiation of a component:
+manualStandalone.html -> upload.php (uploads required files manually rather than via HTTP messaging)
+
+This processes a file directly via an embedded form
+--------------------------
+
+-->
+</head>
+<body>
+<h2>Solas Component HTML Soundtrack Localiser - S_manualStandalone.html</h2>
+
+This component accepts a HTML webpage, scans it for soundtrack objects, and replaces them with suitable matches in the requested target culture/locale.
+</b>
+<hr />
+<br>
+<p>Select a file for standalone processing (*.htm *.html currently supported) </p>
+<!-- Put a call here to select a HTML file for standalone processing -->
+<div id="standalone">
+<form action="S_upload.php" method="post" enctype="multipart/form-data"><label for="file">Filename:</label>
+<input name="userfile" id="file" type="file"/>
+<br><br>
+
+Select target culture/locale:<br>
+<input type="radio" name="locale" value="IE" checked /> EN-IE <br/>
+<input type="radio" name="locale" value="JP" /> JP-JP <br/>
+<input type="radio" name="locale" value="ES" /> ES-ES <br/>
+<input type="radio" name="locale" value="US" /> EN-US <br/>
+<br>
+<input name="submit" value="Process File" type="submit"/>
+
+</form>
+</div>
+<br>
+<br>
+<hr />
+
+<img src="footer_CNGL_LRC.JPG" />
+</body>
+</html>
